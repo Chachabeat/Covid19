@@ -14,7 +14,6 @@ dt[is.na(Inf_Source), Inf_Source := "Domestic"]
 ggplot(dt, aes(x = notification_date, fill = Inf_Source)) +
   geom_bar() +
   labs(x = "Date Reported", y = "Number of Cases", fill = "Infection Source*") +
-  ggtitle("NSW Covid-19 Cases", ) +
+  ggtitle("NSW Covid-19 Cases upd. 15-5-20", ) +
   theme_bw() +
   theme(plot.title = element_text(hjust = 0.5))
-
